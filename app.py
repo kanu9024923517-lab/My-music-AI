@@ -44,6 +44,7 @@ else:
         if st.button("ACTIVATE"):
             if code_input in SECRET_CODES:
                 st.session_state.premium = True
+                
                 st.success("Premium Active!")
                 st.rerun()
             else:
